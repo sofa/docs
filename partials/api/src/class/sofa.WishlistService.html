@@ -1,0 +1,420 @@
+<!-- <a href="http://github.com/sofa/sofa-wishlist-service/edit/master/src/sofa.wishlistService.js">Improve this doc</a> -->
+
+
+
+
+<header>
+  <h1 class="component-name">Class: sofa.WishlistService</h1>
+  <dl class="meta-infos">
+    <dt class="meta-info-term">Defined in:</dt>
+    <dd class="meta-info-description"><a href="http://github.com/sofa/sofa-wishlist-service/blob/master/src/sofa.wishlistService.js#L3">sofa-wishlist-service/src/sofa.wishlistService.js:3</a></dd>
+    <dt class="meta-info-term">Dependencies:</dt>
+    <dd class="meta-info-description">
+      
+        None
+      
+    </dd>
+    <dt class="meta-info-term">Package:</dt>
+    <dd class="meta-info-description"><a href="http://github.com/sofa/sofa-wishlist-service">sofa-wishlist-service</a></dd>
+    <dt class="meta-info-term">Package dependencies:</dt>
+    <dd class="meta-info-description">
+      
+        
+        <a href="http://github.com/sofa/sofa-core">sofa-core</a>, <a href="http://github.com/sofa/sofa-storages">sofa-storages</a>
+      
+    </dd>
+  </dl>
+</header>
+
+
+
+<section class="installation-instruction">
+  <h2>Installation</h2>
+  <ul class="installation-steps">
+    <li class="installation-step">
+      <h3>1. Getting the source</h3>
+      <p>You can access this <em>class</em> by installing the <em>sofa-wishlist-service</em> package. Installing this package is as easy as running one of the following commands:</p>
+
+        <ul>
+          <li>
+            <h4>Via npm:</h4>
+            <pre><code>npm install sofa-wishlist-service</code></pre>
+          </li>
+          <li>
+            <h4>Via Bower:</h4>
+            <pre><code>bower install sofa-wishlist-service</code></pre>
+          </li>
+          <li>
+            <h4>Via Git:</h4>
+            <pre><code>git clone http://github.com/sofa/sofa-wishlist-service</code></pre>
+          </li>
+        </ul>
+    </li>
+    <li class="installation-step">
+      <h3>2. Embedding the source</h3>
+      <p>After that, embed the distribution file in your HTML document.</p>
+        <pre><code>&lt;script src=&quot;dist/sofa.WishlistService.js&quot;&gt;&lt;/script&gt;</code></pre>
+
+        <p>Don't forget that each package defines its own package dependencies. Make sure to embed their files too if needed.</p>
+    </li>
+    <li class="installation-step">
+      <h3>3. Use it</h3>
+
+        
+
+        
+          
+            
+              <p>After that, create an instance of this service by using the `new` operator:</p>
+
+              
+                <pre><code>var wishlistService = new sofa.WishlistService();</code></pre>
+              
+            
+          
+        
+    </li>
+  <ul>
+</section>
+
+
+
+<section class="description">
+  <h2>Description</h2>
+  <p><code>sofa.WishlistService</code> is the interface to interact with a wishlist. It provides
+methods to add and remove items. It also takes care of writing
+updates to an available storage service.</p>
+
+</section>
+
+
+  
+  
+
+  
+<section class="methods">
+  <header>
+    <h2>Methods</h2>
+  </header>
+  <ul class="methods-list">
+    <li class="methods-list-item" id="getItems">
+    <section class="method">
+          <h3 class="method-name">getItems()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-wishlist-service/blob/master/src/sofa.wishlistService.js#L27">sofa-wishlist-service/src/sofa.wishlistService.js:27</a></p>
+        <p>Returns an object with key value pairs of the items</p>
+
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-object">object</a></td>
+    <td><p>the wishlist items.</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="addItem">
+    <section class="method">
+          <h3 class="method-name">addItem(product, quantity, variant)
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-wishlist-service/blob/master/src/sofa.wishlistService.js#L44">sofa-wishlist-service/src/sofa.wishlistService.js:44</a></p>
+        <p>Adds an item to the wishlist. Returns the added wishlist item.</p>
+
+
+        
+        <h4>Parameters</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>
+        product
+        
+        
+      </td>
+      <td>
+        <a href="" class="label type-hint type-hint-object">object</a>
+      </td>
+      <td>
+        <p>The product object itself.</p>
+
+        
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        quantity
+        
+        
+      </td>
+      <td>
+        <a href="" class="label type-hint type-hint-number">number</a>
+      </td>
+      <td>
+        <p>The number of times the product should be added.</p>
+
+        
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        variant
+        
+        
+      </td>
+      <td>
+        <a href="" class="label type-hint type-hint-object">object</a>
+      </td>
+      <td>
+        <p>The variant the product should be added with.</p>
+
+        
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-object">object</a></td>
+    <td><p>The added wishlist item.</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="removeItem">
+    <section class="method">
+          <h3 class="method-name">removeItem(either)
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-wishlist-service/blob/master/src/sofa.wishlistService.js#L80">sofa-wishlist-service/src/sofa.wishlistService.js:80</a></p>
+        <p>Removes an item from the wishlist.</p>
+
+
+        
+        <h4>Parameters</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>
+        either
+        
+        
+      </td>
+      <td>
+        <a href="" class="label type-hint type-hint-object">object</a><a href="" class="label type-hint type-hint-string">string</a>
+      </td>
+      <td>
+        <p>the item or the key of the item to be removed</p>
+
+        
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+        
+
+        
+        
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="getItemCount">
+    <section class="method">
+          <h3 class="method-name">getItemCount()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-wishlist-service/blob/master/src/sofa.wishlistService.js#L100">sofa-wishlist-service/src/sofa.wishlistService.js:100</a></p>
+        <p>Returns the amount of items that are currently on the wishlist.</p>
+
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-number">Number</a></td>
+    <td><p>The count of items.</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="isEmpty">
+    <section class="method">
+          <h3 class="method-name">isEmpty()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-wishlist-service/blob/master/src/sofa.wishlistService.js#L117">sofa-wishlist-service/src/sofa.wishlistService.js:117</a></p>
+        <p>Returns true if the wishlist is empty and false if it holds items.</p>
+
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td>
+    <td><p>empty state</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="exists">
+    <section class="method">
+          <h3 class="method-name">exists(the)
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-wishlist-service/blob/master/src/sofa.wishlistService.js#L134">sofa-wishlist-service/src/sofa.wishlistService.js:134</a></p>
+        <p>Returns true if the item exists in the wishlist or false otherwise.</p>
+
+
+        
+        <h4>Parameters</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>
+        the
+        
+        
+      </td>
+      <td>
+        <a href="" class="label type-hint type-hint-string">string</a>
+      </td>
+      <td>
+        <p>productUrlKey (optionally with /variantId) to be checked for existance</p>
+
+        
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td>
+    <td><p>exists state</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    </ul>
+  
+  
+
+
+
+
+
