@@ -1,0 +1,485 @@
+<!-- <a href="http://github.com/sofa/sofa-core/edit/master/src/sofa.util.js">Improve this doc</a> -->
+
+
+
+
+<header>
+  <h1 class="component-name">Class: sofa.Util</h1>
+  <dl class="meta-infos">
+    <dt class="meta-info-term">Defined in:</dt>
+    <dd class="meta-info-description"><a href="http://github.com/sofa/sofa-core/blob/master/src/sofa.util.js#L25">sofa-core/src/sofa.util.js:25</a></dd>
+    <dt class="meta-info-term">Dependencies:</dt>
+    <dd class="meta-info-description">
+      
+        None
+      
+    </dd>
+    <dt class="meta-info-term">Package:</dt>
+    <dd class="meta-info-description"><a href="http://github.com/sofa/sofa-core">sofa-core</a></dd>
+    <dt class="meta-info-term">Package dependencies:</dt>
+    <dd class="meta-info-description">
+      
+        None
+      
+    </dd>
+  </dl>
+</header>
+
+
+
+<section class="installation-instruction">
+  <h2>Installation</h2>
+  <ul class="installation-steps">
+    <li class="installation-step">
+      <h3>1. Getting the source</h3>
+      <p>You can access this <em>class</em> by installing the <em>sofa-core</em> package. Installing this package is as easy as running one of the following commands:</p>
+
+        <ul>
+          <li>
+            <h4>Via npm:</h4>
+            <pre><code>npm install sofa-core</code></pre>
+          </li>
+          <li>
+            <h4>Via Bower:</h4>
+            <pre><code>bower install sofa-core</code></pre>
+          </li>
+          <li>
+            <h4>Via Git:</h4>
+            <pre><code>git clone http://github.com/sofa/sofa-core</code></pre>
+          </li>
+        </ul>
+    </li>
+    <li class="installation-step">
+      <h3>2. Embedding the source</h3>
+      <p>After that, embed the distribution file in your HTML document.</p>
+        <pre><code>&lt;script src=&quot;dist/sofa.core.js&quot;&gt;&lt;/script&gt;</code></pre>
+
+        <p>Don't forget that each package defines its own package dependencies. Make sure to embed their files too if needed.</p>
+    </li>
+    <li class="installation-step">
+      <h3>3. Use it</h3>
+
+        
+
+        
+          
+            
+              <p>After that, create an instance of this service by using the `new` operator:</p>
+
+              
+                <pre><code>var util = new sofa.Util();</code></pre>
+              
+            
+          
+        
+    </li>
+  <ul>
+</section>
+
+
+
+<section class="description">
+  <h2>Description</h2>
+  <p>Namespace containing utility functions for compatibility stuff etc.</p>
+
+</section>
+
+
+  
+  
+
+  
+<section class="methods">
+  <header>
+    <h2>Methods</h2>
+  </header>
+  <ul class="methods-list">
+    <li class="methods-list-item" id="isToFixedBroken">
+    <section class="method">
+          <h3 class="method-name">isToFixedBroken()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-core/blob/master/src/sofa.util.js#L37">sofa-core/src/sofa.util.js:37</a></p>
+        <p>Checks if the <code>toFixed()</code> function in the current JavaScript
+environment is broken or not. For more info see <a href="http://docs.sencha.com/touch/2.2.0/source/Number2.html#Ext-Number-method-toFixed">http://docs.sencha.com/touch/2.2.0/source/Number2.html#Ext-Number-method-toFixed</a>.</p>
+
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-boolean">boolean</a></td>
+    <td><p>Whether its broken or not.</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="domReady">
+    <section class="method">
+          <h3 class="method-name">domReady(fn)
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-core/blob/master/src/sofa.util.js#L60">sofa-core/src/sofa.util.js:60</a></p>
+        <p>Takes a function and executes it if the document is ready at this point.
+If its not, it registers the given function as callback.</p>
+
+
+        
+        <h4>Parameters</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>
+        fn
+        
+        
+      </td>
+      <td>
+        <a href="" class="label type-hint type-hint-function">function</a>
+      </td>
+      <td>
+        <p>Callback function to execute once DOM is ready.</p>
+
+        
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+        
+
+        
+        
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="round">
+    <section class="method">
+          <h3 class="method-name">round(value, places)
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-core/blob/master/src/sofa.util.js#L79">sofa-core/src/sofa.util.js:79</a></p>
+        <p>Rounds a given value by a number of given places and returns it.</p>
+
+
+        
+        <h4>Parameters</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>
+        value
+        
+        
+      </td>
+      <td>
+        <a href="" class="label type-hint type-hint-float">float</a><a href="" class="label type-hint type-hint-number">number</a>
+      </td>
+      <td>
+        <p>Value to be round.</p>
+
+        
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        places
+        
+        
+      </td>
+      <td>
+        <a href="" class="label type-hint type-hint-int">int</a>
+      </td>
+      <td>
+        <p>Number of places to round the value.</p>
+
+        
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-float">float</a></td>
+    <td><p>Rounded value</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="oFixed">
+    <section class="method">
+          <h3 class="method-name">oFixed(value, precision)
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-core/blob/master/src/sofa.util.js#L96">sofa-core/src/sofa.util.js:96</a></p>
+        <p>Transformes a given value to a string with a fixed value by a given precision.</p>
+
+
+        
+        <h4>Parameters</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>
+        value
+        
+        
+      </td>
+      <td>
+        <a href="" class="label type-hint type-hint-number">number</a><a href="" class="label type-hint type-hint-float">float</a>
+      </td>
+      <td>
+        <p>Value to fix.</p>
+
+        
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        precision
+        
+        
+      </td>
+      <td>
+        <a href="" class="label type-hint type-hint-number">number</a>
+      </td>
+      <td>
+        <p>Precision.</p>
+
+        
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-string">String</a></td>
+    <td><p>Transformed fixed value.</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="clone">
+    <section class="method">
+          <h3 class="method-name">clone(obj)
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-core/blob/master/src/sofa.util.js#L121">sofa-core/src/sofa.util.js:121</a></p>
+        <p>This method is useful for cloning complex (read: nested) objects without
+having references from the clone to the original object.
+(See <a href="http://stackoverflow.com/questions/728360/most-elegant-way-to-clone-a-javascript-object">http://stackoverflow.com/questions/728360/most-elegant-way-to-clone-a-javascript-object</a>).</p>
+
+
+        
+        <h4>Parameters</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>
+        obj
+        
+        
+      </td>
+      <td>
+        <a href="" class="label type-hint type-hint-object">object</a>
+      </td>
+      <td>
+        <p>Object to clone.</p>
+
+        
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-object">object</a></td>
+    <td><p>A clone of the given object.</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="extend">
+    <section class="method">
+          <h3 class="method-name">extend(dst)
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-core/blob/master/src/sofa.util.js#L170">sofa-core/src/sofa.util.js:170</a></p>
+        <p>Extends the given object by members of additional given objects.</p>
+
+
+        
+        <h4>Parameters</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>
+        dst
+        
+        
+      </td>
+      <td>
+        <a href="" class="label type-hint type-hint-object">object</a>
+      </td>
+      <td>
+        <p>Destination object to extend.</p>
+
+        
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-object">object</a></td>
+    <td><p>Extended destination object.</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    </ul>
+  
+  
+
+
+
+
+

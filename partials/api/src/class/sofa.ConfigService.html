@@ -1,0 +1,310 @@
+<!-- <a href="http://github.com/sofa/sofa-core/edit/master/src/sofa.configService.js">Improve this doc</a> -->
+
+
+
+
+<header>
+  <h1 class="component-name">Class: sofa.ConfigService</h1>
+  <dl class="meta-infos">
+    <dt class="meta-info-term">Defined in:</dt>
+    <dd class="meta-info-description"><a href="http://github.com/sofa/sofa-core/blob/master/src/sofa.configService.js#L2">sofa-core/src/sofa.configService.js:2</a></dd>
+    <dt class="meta-info-term">Dependencies:</dt>
+    <dd class="meta-info-description">
+      
+        None
+      
+    </dd>
+    <dt class="meta-info-term">Package:</dt>
+    <dd class="meta-info-description"><a href="http://github.com/sofa/sofa-core">sofa-core</a></dd>
+    <dt class="meta-info-term">Package dependencies:</dt>
+    <dd class="meta-info-description">
+      
+        None
+      
+    </dd>
+  </dl>
+</header>
+
+
+
+<section class="installation-instruction">
+  <h2>Installation</h2>
+  <ul class="installation-steps">
+    <li class="installation-step">
+      <h3>1. Getting the source</h3>
+      <p>You can access this <em>class</em> by installing the <em>sofa-core</em> package. Installing this package is as easy as running one of the following commands:</p>
+
+        <ul>
+          <li>
+            <h4>Via npm:</h4>
+            <pre><code>npm install sofa-core</code></pre>
+          </li>
+          <li>
+            <h4>Via Bower:</h4>
+            <pre><code>bower install sofa-core</code></pre>
+          </li>
+          <li>
+            <h4>Via Git:</h4>
+            <pre><code>git clone http://github.com/sofa/sofa-core</code></pre>
+          </li>
+        </ul>
+    </li>
+    <li class="installation-step">
+      <h3>2. Embedding the source</h3>
+      <p>After that, embed the distribution file in your HTML document.</p>
+        <pre><code>&lt;script src=&quot;dist/sofa.core.js&quot;&gt;&lt;/script&gt;</code></pre>
+
+        <p>Don't forget that each package defines its own package dependencies. Make sure to embed their files too if needed.</p>
+    </li>
+    <li class="installation-step">
+      <h3>3. Use it</h3>
+
+        
+
+        
+          
+            
+              <p>After that, create an instance of this service by using the `new` operator:</p>
+
+              
+                <pre><code>var configService = new sofa.ConfigService();</code></pre>
+              
+            
+          
+        
+    </li>
+  <ul>
+</section>
+
+
+
+<section class="description">
+  <h2>Description</h2>
+  <p>This is a general configuration service which kind of behaves like a registry
+pattern to make configurations available on all layers. Use this service to
+access configuration data for you shop.</p>
+
+</section>
+
+
+  
+  
+
+  
+<section class="methods">
+  <header>
+    <h2>Methods</h2>
+  </header>
+  <ul class="methods-list">
+    <li class="methods-list-item" id="getSupportedCountries">
+    <section class="method">
+          <h3 class="method-name">getSupportedCountries()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-core/blob/master/src/sofa.configService.js#L19">sofa-core/src/sofa.configService.js:19</a></p>
+        <p>Returns an array of supported countries for shipping and invoicing. If no
+countries are specified on the internal config object, this method returns
+and empty array. Simply call this method by running:</p>
+<pre><code class="lang-js">var countries = configService.getSupportedCountries();</code></pre>
+
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-array">array</a></td>
+    <td><p>An array of strings for supported countries for shipping and invoicing.</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="getDefaultCountry">
+    <section class="method">
+          <h3 class="method-name">getDefaultCountry()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-core/blob/master/src/sofa.configService.js#L43">sofa-core/src/sofa.configService.js:43</a></p>
+        <p>Returns the default country for shipping and invoicing that is configured
+for the shop. In case no countries are available, this method returns <code>null</code>.</p>
+<pre><code class="lang-js">var defaultCountry = configService.getDefaultCountry();</code></pre>
+
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-string">string</a></td>
+    <td><p>Name of the default country.</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="getLocalizedPayPalButtonClass">
+    <section class="method">
+          <h3 class="method-name">getLocalizedPayPalButtonClass()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-core/blob/master/src/sofa.configService.js#L62">sofa-core/src/sofa.configService.js:62</a></p>
+        <p>Returns a localized paypal button css class. This method has to be refactored
+since it currently relies on hard-coded class names. Passing an expression
+that ends up in a boolean value, tells the method wether to return a class
+for an enabled or a disabled button.</p>
+<p>For example calling this method like this:</p>
+<pre><code class="lang-js">var className = configService.getLocalizedPayPalButtonClass();</code></pre>
+<p>Returns the class for an enabled button. Calling it with for example <code>true</code>
+gives us the class for a disabled button.</p>
+<pre><code class="lang-js">var className = configService.getLocalizedPayPalButtonClass(true);</code></pre>
+
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-string">string</a></td>
+    <td><p>PayPal button class name.</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="get">
+    <section class="method">
+          <h3 class="method-name">get(key, defaultValue)
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-core/blob/master/src/sofa.configService.js#L92">sofa-core/src/sofa.configService.js:92</a></p>
+        <p>Generic getter function that returns a config value by a given key.</p>
+<pre><code class="lang-js">var value = configService.get(&#39;foo&#39;);</code></pre>
+<p>If a default value is passed and no config setting with the given key
+exists, it is returned. For example, assuming that no configuration for
+<code>foo</code> exists, we can default to any custom value like this:</p>
+<pre><code class="lang-js">var value = configService.get(&#39;foo&#39;, 5); // `5` is a default value</code></pre>
+<p>If no configuration exists and no default value is given, this method
+returns <code>undefined</code>.</p>
+
+
+        
+        <h4>Parameters</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>
+        key
+        
+        
+      </td>
+      <td>
+        <a href="" class="label type-hint type-hint-string">string</a>
+      </td>
+      <td>
+        <p>Key for a certain config value.</p>
+
+        
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        defaultValue
+        
+        
+      </td>
+      <td>
+        <a href="" class="label type-hint type-hint-object">object</a>
+      </td>
+      <td>
+        <p>A default value which will be returned
+if given key doesn&#39;t exist in config.</p>
+
+        
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-object">object</a></td>
+    <td><p>Associative object for <code>key</code>.</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    </ul>
+  
+  
+
+
+
+
+

@@ -1,0 +1,300 @@
+<!-- <a href="http://github.com/sofa/sofa-logging-service/edit/master/src/sofa.loggingService.js">Improve this doc</a> -->
+
+
+
+
+<header>
+  <h1 class="component-name">Class: sofa.LoggingService</h1>
+  <dl class="meta-infos">
+    <dt class="meta-info-term">Defined in:</dt>
+    <dd class="meta-info-description"><a href="http://github.com/sofa/sofa-logging-service/blob/master/src/sofa.loggingService.js#L4">sofa-logging-service/src/sofa.loggingService.js:4</a></dd>
+    <dt class="meta-info-term">Dependencies:</dt>
+    <dd class="meta-info-description">
+      
+        
+        sofa.ConfigService
+      
+    </dd>
+    <dt class="meta-info-term">Package:</dt>
+    <dd class="meta-info-description"><a href="http://github.com/sofa/sofa-logging-service">sofa-logging-service</a></dd>
+    <dt class="meta-info-term">Package dependencies:</dt>
+    <dd class="meta-info-description">
+      
+        
+        <a href="http://github.com/sofa/sofa-core">sofa-core</a>
+      
+    </dd>
+  </dl>
+</header>
+
+
+
+<section class="installation-instruction">
+  <h2>Installation</h2>
+  <ul class="installation-steps">
+    <li class="installation-step">
+      <h3>1. Getting the source</h3>
+      <p>You can access this <em>class</em> by installing the <em>sofa-logging-service</em> package. Installing this package is as easy as running one of the following commands:</p>
+
+        <ul>
+          <li>
+            <h4>Via npm:</h4>
+            <pre><code>npm install sofa-logging-service</code></pre>
+          </li>
+          <li>
+            <h4>Via Bower:</h4>
+            <pre><code>bower install sofa-logging-service</code></pre>
+          </li>
+          <li>
+            <h4>Via Git:</h4>
+            <pre><code>git clone http://github.com/sofa/sofa-logging-service</code></pre>
+          </li>
+        </ul>
+    </li>
+    <li class="installation-step">
+      <h3>2. Embedding the source</h3>
+      <p>After that, embed the distribution file in your HTML document.</p>
+        <pre><code>&lt;script src=&quot;dist/sofa.loggingService.js&quot;&gt;&lt;/script&gt;</code></pre>
+
+        <p>Don't forget that each package defines its own package dependencies. Make sure to embed their files too if needed.</p>
+    </li>
+    <li class="installation-step">
+      <h3>3. Use it</h3>
+
+        
+
+        
+          
+            
+              <p>After that, create an instance of this service by using the `new` operator:</p>
+
+              
+                
+                <pre><code>var loggingService = new sofa.LoggingService(configService);</code></pre>
+              
+            
+          
+        
+    </li>
+  <ul>
+</section>
+
+
+
+<section class="description">
+  <h2>Description</h2>
+  <p>This service abstracts the concrete console interface away. It provides the same
+methods for logging like <code>.log()</code>, <code>.info()</code> etc..</p>
+<p>Use this service to log within your application.</p>
+
+</section>
+
+
+  
+  
+
+  
+<section class="methods">
+  <header>
+    <h2>Methods</h2>
+  </header>
+  <ul class="methods-list">
+    <li class="methods-list-item" id="info">
+    <section class="method">
+          <h3 class="method-name">info(str)
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-logging-service/blob/master/src/sofa.loggingService.js#L42">sofa-logging-service/src/sofa.loggingService.js:42</a></p>
+        <p>A <code>console.info()</code> wrapper to log some info in the console.</p>
+
+
+        
+        <h4>Parameters</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>
+        str
+        
+        
+      </td>
+      <td>
+        <a href="" class="label type-hint type-hint-array">array</a><a href="" class="label type-hint type-hint-string">string</a>
+      </td>
+      <td>
+        <p>String or array to log.</p>
+
+        
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+        
+
+        
+        
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="log">
+    <section class="method">
+          <h3 class="method-name">log(str)
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-logging-service/blob/master/src/sofa.loggingService.js#L62">sofa-logging-service/src/sofa.loggingService.js:62</a></p>
+        <p>A <code>console.log()</code> wrapper to log to console.</p>
+
+
+        
+        <h4>Parameters</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>
+        str
+        
+        
+      </td>
+      <td>
+        <a href="" class="label type-hint type-hint-string">string</a><a href="" class="label type-hint type-hint-array">array</a>
+      </td>
+      <td>
+        <p>String or array to log.</p>
+
+        
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+        
+
+        
+        
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="warn">
+    <section class="method">
+          <h3 class="method-name">warn(str)
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-logging-service/blob/master/src/sofa.loggingService.js#L82">sofa-logging-service/src/sofa.loggingService.js:82</a></p>
+        <p>A <code>console.warn()</code> wrapper to log warnings to console.</p>
+
+
+        
+        <h4>Parameters</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>
+        str
+        
+        
+      </td>
+      <td>
+        <a href="" class="label type-hint type-hint-string">string</a><a href="" class="label type-hint type-hint-array">array</a>
+      </td>
+      <td>
+        <p>String or array to log.</p>
+
+        
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+        
+
+        
+        
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="error">
+    <section class="method">
+          <h3 class="method-name">error(str)
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-logging-service/blob/master/src/sofa.loggingService.js#L102">sofa-logging-service/src/sofa.loggingService.js:102</a></p>
+        <p>A <code>console.error()</code> wrapper to log errors to console.</p>
+
+
+        
+        <h4>Parameters</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>
+        str
+        
+        
+      </td>
+      <td>
+        <a href="" class="label type-hint type-hint-string">string</a><a href="" class="label type-hint type-hint-array">array</a>
+      </td>
+      <td>
+        <p>String or array to log.</p>
+
+        
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+        
+
+        
+        
+        
+      </section>
+    </li>
+    </ul>
+  
+  
+
+
+
+
+

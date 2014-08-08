@@ -1,0 +1,572 @@
+<!-- <a href="http://github.com/sofa/sofa-url-construction-service/edit/master/src/sofa.urlConstructionService.js">Improve this doc</a> -->
+
+
+
+
+<header>
+  <h1 class="component-name">Class: sofa.UrlConstructionService</h1>
+  <dl class="meta-infos">
+    <dt class="meta-info-term">Defined in:</dt>
+    <dd class="meta-info-description"><a href="http://github.com/sofa/sofa-url-construction-service/blob/master/src/sofa.urlConstructionService.js#L3">sofa-url-construction-service/src/sofa.urlConstructionService.js:3</a></dd>
+    <dt class="meta-info-term">Dependencies:</dt>
+    <dd class="meta-info-description">
+      
+        
+        sofa.ConfigService
+      
+    </dd>
+    <dt class="meta-info-term">Package:</dt>
+    <dd class="meta-info-description"><a href="http://github.com/sofa/sofa-url-construction-service">sofa-url-construction-service</a></dd>
+    <dt class="meta-info-term">Package dependencies:</dt>
+    <dd class="meta-info-description">
+      
+        
+        <a href="http://github.com/sofa/sofa-core">sofa-core</a>
+      
+    </dd>
+  </dl>
+</header>
+
+
+
+<section class="installation-instruction">
+  <h2>Installation</h2>
+  <ul class="installation-steps">
+    <li class="installation-step">
+      <h3>1. Getting the source</h3>
+      <p>You can access this <em>class</em> by installing the <em>sofa-url-construction-service</em> package. Installing this package is as easy as running one of the following commands:</p>
+
+        <ul>
+          <li>
+            <h4>Via npm:</h4>
+            <pre><code>npm install sofa-url-construction-service</code></pre>
+          </li>
+          <li>
+            <h4>Via Bower:</h4>
+            <pre><code>bower install sofa-url-construction-service</code></pre>
+          </li>
+          <li>
+            <h4>Via Git:</h4>
+            <pre><code>git clone http://github.com/sofa/sofa-url-construction-service</code></pre>
+          </li>
+        </ul>
+    </li>
+    <li class="installation-step">
+      <h3>2. Embedding the source</h3>
+      <p>After that, embed the distribution file in your HTML document.</p>
+        <pre><code>&lt;script src=&quot;dist/sofa.urlConstructionService.js&quot;&gt;&lt;/script&gt;</code></pre>
+
+        <p>Don't forget that each package defines its own package dependencies. Make sure to embed their files too if needed.</p>
+    </li>
+    <li class="installation-step">
+      <h3>3. Use it</h3>
+
+        
+
+        
+          
+            
+              <p>After that, create an instance of this service by using the `new` operator:</p>
+
+              
+                
+                <pre><code>var urlConstructionService = new sofa.UrlConstructionService(configService);</code></pre>
+              
+            
+          
+        
+    </li>
+  <ul>
+</section>
+
+
+
+<section class="description">
+  <h2>Description</h2>
+  <p>As the name says. This service provides methods to construct URLs for
+different use cases.</p>
+
+</section>
+
+
+  
+  
+
+  
+<section class="methods">
+  <header>
+    <h2>Methods</h2>
+  </header>
+  <ul class="methods-list">
+    <li class="methods-list-item" id="createUrlForContentPage">
+    <section class="method">
+          <h3 class="method-name">createUrlForContentPage(pageId)
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-url-construction-service/blob/master/src/sofa.urlConstructionService.js#L18">sofa-url-construction-service/src/sofa.urlConstructionService.js:18</a></p>
+        <p>Creates url for content page.</p>
+
+
+        
+        <h4>Parameters</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>
+        pageId
+        
+        
+      </td>
+      <td>
+        <a href="" class="label type-hint type-hint-string">string</a>
+      </td>
+      <td>
+        
+        
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-string">string</a></td>
+    <td><p>Url</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="createUrlForProducts">
+    <section class="method">
+          <h3 class="method-name">createUrlForProducts(categoryUrlId)
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-url-construction-service/blob/master/src/sofa.urlConstructionService.js#L33">sofa-url-construction-service/src/sofa.urlConstructionService.js:33</a></p>
+        <p>Creates url for products.</p>
+
+
+        
+        <h4>Parameters</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>
+        categoryUrlId
+        
+        
+      </td>
+      <td>
+        <a href="" class="label type-hint type-hint-int">int</a>
+      </td>
+      <td>
+        <p>Category url id.</p>
+
+        
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-string">string</a></td>
+    <td><p>Url</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="createUrlForProduct">
+    <section class="method">
+          <h3 class="method-name">createUrlForProduct(product)
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-url-construction-service/blob/master/src/sofa.urlConstructionService.js#L48">sofa-url-construction-service/src/sofa.urlConstructionService.js:48</a></p>
+        <p>Creates url for a product.</p>
+
+
+        
+        <h4>Parameters</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>
+        product
+        
+        
+      </td>
+      <td>
+        <a href="" class="label type-hint type-hint-product">product</a>
+      </td>
+      <td>
+        <p>Product object.</p>
+
+        
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-string">string</a></td>
+    <td><p>Url</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="createUrlForCategory">
+    <section class="method">
+          <h3 class="method-name">createUrlForCategory(categoryUrlId)
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-url-construction-service/blob/master/src/sofa.urlConstructionService.js#L63">sofa-url-construction-service/src/sofa.urlConstructionService.js:63</a></p>
+        <p>Creates url for a category.</p>
+
+
+        
+        <h4>Parameters</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>
+        categoryUrlId
+        
+        
+      </td>
+      <td>
+        <a href="" class="label type-hint type-hint-int">int</a>
+      </td>
+      <td>
+        <p>Category url id.</p>
+
+        
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-string">string</a></td>
+    <td><p>Url</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="createUrlForRootCategory">
+    <section class="method">
+          <h3 class="method-name">createUrlForRootCategory()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-url-construction-service/blob/master/src/sofa.urlConstructionService.js#L78">sofa-url-construction-service/src/sofa.urlConstructionService.js:78</a></p>
+        <p>Creates url for root category.</p>
+
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-string">string</a></td>
+    <td><p>Url</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="createUrlForCart">
+    <section class="method">
+          <h3 class="method-name">createUrlForCart()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-url-construction-service/blob/master/src/sofa.urlConstructionService.js#L92">sofa-url-construction-service/src/sofa.urlConstructionService.js:92</a></p>
+        <p>Creates url for cart.</p>
+
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-string">string</a></td>
+    <td><p>Url</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="createUrlForCheckout">
+    <section class="method">
+          <h3 class="method-name">createUrlForCheckout()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-url-construction-service/blob/master/src/sofa.urlConstructionService.js#L106">sofa-url-construction-service/src/sofa.urlConstructionService.js:106</a></p>
+        <p>Creates url for checkout.</p>
+
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-string">string</a></td>
+    <td><p>Url</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="createUrlForSummary">
+    <section class="method">
+          <h3 class="method-name">createUrlForSummary(token)
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-url-construction-service/blob/master/src/sofa.urlConstructionService.js#L120">sofa-url-construction-service/src/sofa.urlConstructionService.js:120</a></p>
+        <p>Creates url for summary.</p>
+
+
+        
+        <h4>Parameters</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>
+        token
+        
+        
+      </td>
+      <td>
+        <a href="" class="label type-hint type-hint-string">string</a>
+      </td>
+      <td>
+        <p>Summary token.</p>
+
+        
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-string">string</a></td>
+    <td><p>Url</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="createUrlForShippingCostsPage">
+    <section class="method">
+          <h3 class="method-name">createUrlForShippingCostsPage()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-url-construction-service/blob/master/src/sofa.urlConstructionService.js#L135">sofa-url-construction-service/src/sofa.urlConstructionService.js:135</a></p>
+        <p>Creates url for shipping costs page.</p>
+
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-string">string</a></td>
+    <td><p>Url</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    </ul>
+  
+  
+
+
+
+
+

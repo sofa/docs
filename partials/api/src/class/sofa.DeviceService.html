@@ -1,0 +1,624 @@
+<!-- <a href="http://github.com/sofa/sofa-device-service/edit/master/src/sofa.deviceService.js">Improve this doc</a> -->
+
+
+
+
+<header>
+  <h1 class="component-name">Class: sofa.DeviceService</h1>
+  <dl class="meta-infos">
+    <dt class="meta-info-term">Defined in:</dt>
+    <dd class="meta-info-description"><a href="http://github.com/sofa/sofa-device-service/blob/master/src/sofa.deviceService.js#L5">sofa-device-service/src/sofa.deviceService.js:5</a></dd>
+    <dt class="meta-info-term">Dependencies:</dt>
+    <dd class="meta-info-description">
+      
+        None
+      
+    </dd>
+    <dt class="meta-info-term">Package:</dt>
+    <dd class="meta-info-description"><a href="http://github.com/sofa/sofa-device-service">sofa-device-service</a></dd>
+    <dt class="meta-info-term">Package dependencies:</dt>
+    <dd class="meta-info-description">
+      
+        
+        <a href="http://github.com/sofa/sofa-core">sofa-core</a>
+      
+    </dd>
+  </dl>
+</header>
+
+
+
+<section class="installation-instruction">
+  <h2>Installation</h2>
+  <ul class="installation-steps">
+    <li class="installation-step">
+      <h3>1. Getting the source</h3>
+      <p>You can access this <em>class</em> by installing the <em>sofa-device-service</em> package. Installing this package is as easy as running one of the following commands:</p>
+
+        <ul>
+          <li>
+            <h4>Via npm:</h4>
+            <pre><code>npm install sofa-device-service</code></pre>
+          </li>
+          <li>
+            <h4>Via Bower:</h4>
+            <pre><code>bower install sofa-device-service</code></pre>
+          </li>
+          <li>
+            <h4>Via Git:</h4>
+            <pre><code>git clone http://github.com/sofa/sofa-device-service</code></pre>
+          </li>
+        </ul>
+    </li>
+    <li class="installation-step">
+      <h3>2. Embedding the source</h3>
+      <p>After that, embed the distribution file in your HTML document.</p>
+        <pre><code>&lt;script src=&quot;dist/sofa.deviceService.js&quot;&gt;&lt;/script&gt;</code></pre>
+
+        <p>Don't forget that each package defines its own package dependencies. Make sure to embed their files too if needed.</p>
+    </li>
+    <li class="installation-step">
+      <h3>3. Use it</h3>
+
+        
+
+        
+          
+            
+              <p>After that, create an instance of this service by using the `new` operator:</p>
+
+              
+                <pre><code>var deviceService = new sofa.DeviceService();</code></pre>
+              
+            
+          
+        
+    </li>
+  <ul>
+</section>
+
+
+
+<section class="description">
+  <h2>Description</h2>
+  <p>This is a helper service that gives you methods to check for certain contexts
+on touch devices etc. It determines the state for the usage of flexbox as well
+as things like overflow:scroll support.</p>
+
+</section>
+
+
+  
+  
+
+  
+<section class="methods">
+  <header>
+    <h2>Methods</h2>
+  </header>
+  <ul class="methods-list">
+    <li class="methods-list-item" id="getHtmlTag">
+    <section class="method">
+          <h3 class="method-name">getHtmlTag()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-device-service/blob/master/src/sofa.deviceService.js#L31">sofa-device-service/src/sofa.deviceService.js:31</a></p>
+        <p>Returns an HTMLDomObject for HTML.</p>
+
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-object">object</a></td>
+    <td><p>HTMLDomObject</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="isIpadOnIos7">
+    <section class="method">
+          <h3 class="method-name">isIpadOnIos7()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-device-service/blob/master/src/sofa.deviceService.js#L71">sofa-device-service/src/sofa.deviceService.js:71</a></p>
+        <p>Returns a boolean indicating whether the device is an iPad running iOS7 or not.</p>
+
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-boolean">boolean</a></td>
+    <td></td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="getViewportDimensions">
+    <section class="method">
+          <h3 class="method-name">getViewportDimensions()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-device-service/blob/master/src/sofa.deviceService.js#L101">sofa-device-service/src/sofa.deviceService.js:101</a></p>
+        <p>Returns the height of the viewport</p>
+
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-int">int</a></td>
+    <td></td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="isInPortraitMode">
+    <section class="method">
+          <h3 class="method-name">isInPortraitMode()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-device-service/blob/master/src/sofa.deviceService.js#L115">sofa-device-service/src/sofa.deviceService.js:115</a></p>
+        <p>Returns a bool indicating whether the decice is held in portrait mode.</p>
+
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-bool">bool</a></td>
+    <td><p>boolean</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="isLandscapeMode">
+    <section class="method">
+          <h3 class="method-name">isLandscapeMode()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-device-service/blob/master/src/sofa.deviceService.js#L129">sofa-device-service/src/sofa.deviceService.js:129</a></p>
+        <p>Returns a bool indicating whether the decice is held in landscape mode.</p>
+
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-boolean">boolean</a></td>
+    <td></td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="isTabletSiye">
+    <section class="method">
+          <h3 class="method-name">isTabletSiye()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-device-service/blob/master/src/sofa.deviceService.js#L143">sofa-device-service/src/sofa.deviceService.js:143</a></p>
+        <p>Returns true if the current device is in &quot;TabletSize&quot;. See SO link for more
+information (<a href="http://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile">http://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile</a>).</p>
+
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-boolean">boolean</a></td>
+    <td><p>Whether the device is in tablet size or not.</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="isStockAndroidBrowser">
+    <section class="method">
+          <h3 class="method-name">isStockAndroidBrowser()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-device-service/blob/master/src/sofa.deviceService.js#L158">sofa-device-service/src/sofa.deviceService.js:158</a></p>
+        <p>Checks if browser is stock android browser or not.</p>
+
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-boolean">boolean</a></td>
+    <td></td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="flagOs">
+    <section class="method">
+          <h3 class="method-name">flagOs()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-device-service/blob/master/src/sofa.deviceService.js#L172">sofa-device-service/src/sofa.deviceService.js:172</a></p>
+        <p>Flags the current document with an SDK specific class depending on the OS
+of the device.</p>
+
+
+        
+
+        
+        
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="flagOverflowSupport">
+    <section class="method">
+          <h3 class="method-name">flagOverflowSupport()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-device-service/blob/master/src/sofa.deviceService.js#L188">sofa-device-service/src/sofa.deviceService.js:188</a></p>
+        <p>Flags the current document with an SDK specific class depending on given
+overflow:scroll support.</p>
+
+
+        
+
+        
+        
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="getUserAgent">
+    <section class="method">
+          <h3 class="method-name">getUserAgent()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-device-service/blob/master/src/sofa.deviceService.js#L202">sofa-device-service/src/sofa.deviceService.js:202</a></p>
+        
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-string">string</a></td>
+    <td><p>User agent currently in use</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="getOs">
+    <section class="method">
+          <h3 class="method-name">getOs()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-device-service/blob/master/src/sofa.deviceService.js#L217">sofa-device-service/src/sofa.deviceService.js:217</a></p>
+        <p>Returns OS string.</p>
+
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-string">string</a></td>
+    <td><p>Name of OS.</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="getOsVersion">
+    <section class="method">
+          <h3 class="method-name">getOsVersion()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-device-service/blob/master/src/sofa.deviceService.js#L231">sofa-device-service/src/sofa.deviceService.js:231</a></p>
+        <p>Returns OS version string.</p>
+
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-string">string</a></td>
+    <td><p>Version of OS.</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="isAndroid2x">
+    <section class="method">
+          <h3 class="method-name">isAndroid2x()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-device-service/blob/master/src/sofa.deviceService.js#L245">sofa-device-service/src/sofa.deviceService.js:245</a></p>
+        <p>Returns true if device os is Android and version starts with &#39;2&#39;.</p>
+
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-bool">bool</a></td>
+    <td></td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="hasOverflowSupport">
+    <section class="method">
+          <h3 class="method-name">hasOverflowSupport()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-device-service/blob/master/src/sofa.deviceService.js#L259">sofa-device-service/src/sofa.deviceService.js:259</a></p>
+        <p>Checks if the current device is blacklisted as such with no overflow:scroll support</p>
+
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-boolean">boolean</a></td>
+    <td></td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="hasModernFlexboxSupport">
+    <section class="method">
+          <h3 class="method-name">hasModernFlexboxSupport()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-device-service/blob/master/src/sofa.deviceService.js#L282">sofa-device-service/src/sofa.deviceService.js:282</a></p>
+        <p>Checks if the browser has modern flexbox support or not.</p>
+
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-boolean">boolean</a></td>
+    <td></td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="flagModernFlexboxSupport">
+    <section class="method">
+          <h3 class="method-name">flagModernFlexboxSupport()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-device-service/blob/master/src/sofa.deviceService.js#L317">sofa-device-service/src/sofa.deviceService.js:317</a></p>
+        <p>Flags the document with an SDK specific class for modern flexbox support.</p>
+
+
+        
+
+        
+        
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="flagIpadOnIos7">
+    <section class="method">
+          <h3 class="method-name">flagIpadOnIos7()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-device-service/blob/master/src/sofa.deviceService.js#L334">sofa-device-service/src/sofa.deviceService.js:334</a></p>
+        <p>Flags the document with an SDK specific class to help getting around a bug in iOS7 on iPad landscape mode.
+see <a href="http://stackoverflow.com/questions/18855642/ios-7-css-html-height-100-692px">http://stackoverflow.com/questions/18855642/ios-7-css-html-height-100-692px</a></p>
+
+
+        
+
+        
+        
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="setViewportHeightToDeviceHeight">
+    <section class="method">
+          <h3 class="method-name">setViewportHeightToDeviceHeight()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-device-service/blob/master/src/sofa.deviceService.js#L350">sofa-device-service/src/sofa.deviceService.js:350</a></p>
+        <p>Sets the height of the html element to the actual height of the device.</p>
+
+
+        
+
+        
+        
+        
+      </section>
+    </li>
+    </ul>
+  
+  
+
+
+
+
+

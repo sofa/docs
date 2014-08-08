@@ -1,0 +1,234 @@
+<!-- <a href="http://github.com/sofa/sofa-core/edit/master/src/sofa.models.basketItem.js">Improve this doc</a> -->
+
+
+
+
+<header>
+  <h1 class="component-name">Model: sofa.models.BasketItem</h1>
+  <dl class="meta-infos">
+    <dt class="meta-info-term">Defined in:</dt>
+    <dd class="meta-info-description"><a href="http://github.com/sofa/sofa-core/blob/master/src/sofa.models.basketItem.js#L2">sofa-core/src/sofa.models.basketItem.js:2</a></dd>
+    <dt class="meta-info-term">Dependencies:</dt>
+    <dd class="meta-info-description">
+      
+        None
+      
+    </dd>
+    <dt class="meta-info-term">Package:</dt>
+    <dd class="meta-info-description"><a href="http://github.com/sofa/sofa-core">sofa-core</a></dd>
+    <dt class="meta-info-term">Package dependencies:</dt>
+    <dd class="meta-info-description">
+      
+        None
+      
+    </dd>
+  </dl>
+</header>
+
+
+
+<section class="installation-instruction">
+  <h2>Installation</h2>
+  <ul class="installation-steps">
+    <li class="installation-step">
+      <h3>1. Getting the source</h3>
+      <p>You can access this <em>model</em> by installing the <em>sofa-core</em> package. Installing this package is as easy as running one of the following commands:</p>
+
+        <ul>
+          <li>
+            <h4>Via npm:</h4>
+            <pre><code>npm install sofa-core</code></pre>
+          </li>
+          <li>
+            <h4>Via Bower:</h4>
+            <pre><code>bower install sofa-core</code></pre>
+          </li>
+          <li>
+            <h4>Via Git:</h4>
+            <pre><code>git clone http://github.com/sofa/sofa-core</code></pre>
+          </li>
+        </ul>
+    </li>
+    <li class="installation-step">
+      <h3>2. Embedding the source</h3>
+      <p>After that, embed the distribution file in your HTML document.</p>
+        <pre><code>&lt;script src=&quot;dist/sofa.core.js&quot;&gt;&lt;/script&gt;</code></pre>
+
+        <p>Don't forget that each package defines its own package dependencies. Make sure to embed their files too if needed.</p>
+    </li>
+    <li class="installation-step">
+      <h3>3. Use it</h3>
+
+        
+
+        
+          <p>After that, you can inject this service by using Angular's dependency injection system:</p>
+
+          <pre><code>angular.module(&#39;yourApp&#39;).controller(&#39;FooController&#39;, [&#39;sofa.models.BasketItem&#39;, function (sofa.models.BasketItem) {&#10;&#10;}]);</code></pre>
+        
+    </li>
+  <ul>
+</section>
+
+
+
+<section class="description">
+  <h2>Description</h2>
+  <p>A basket item model that represents basket items. This model provides some methods
+to access information about the basket item such as the price or the variant id.</p>
+
+</section>
+
+
+  
+  
+
+  
+<section class="methods">
+  <header>
+    <h2>Methods</h2>
+  </header>
+  <ul class="methods-list">
+    <li class="methods-list-item" id="getPrice">
+    <section class="method">
+          <h3 class="method-name">getPrice()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-core/blob/master/src/sofa.models.basketItem.js#L22">sofa-core/src/sofa.models.basketItem.js:22</a></p>
+        <p>Returns the price of the basket item depending on the variant.</p>
+
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-float">float</a></td>
+    <td><p>Price</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="getTotal">
+    <section class="method">
+          <h3 class="method-name">getTotal()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-core/blob/master/src/sofa.models.basketItem.js#L36">sofa-core/src/sofa.models.basketItem.js:36</a></p>
+        <p>Returns the total price of the basket item considering the quantity.</p>
+
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-float">float</a></td>
+    <td><p>Total price</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="getVariantID">
+    <section class="method">
+          <h3 class="method-name">getVariantID()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-core/blob/master/src/sofa.models.basketItem.js#L50">sofa-core/src/sofa.models.basketItem.js:50</a></p>
+        <p>Returns the variant id of the basket item if it exists.</p>
+
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-int">int</a></td>
+    <td><p>Variant id.</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    
+    <li class="methods-list-item" id="getOptionID">
+    <section class="method">
+          <h3 class="method-name">getOptionID()
+</h3>
+          <p>Defined in <a href="http://github.com/sofa/sofa-core/blob/master/src/sofa.models.basketItem.js#L64">sofa-core/src/sofa.models.basketItem.js:64</a></p>
+        <p>Returns the option id of the basket item if it exists.</p>
+
+
+        
+
+        
+        
+        
+        <h4>Returns</h4>
+        
+<table class="variables-matrix input-arguments">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><a href="" class="label type-hint type-hint-int">int</a></td>
+    <td><p>Option id.</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+    </li>
+    </ul>
+  
+  
+
+
+
+
+
